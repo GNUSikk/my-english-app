@@ -29,7 +29,7 @@ jobs:
         
       - name: Initialize Capacitor Android
         run: |
-          npm install @capacitor/core @capacitor/cli @capacitor/android
+          npm install @capacitor/core @capacitor/cli @capacitor/android @capacitor-community/text-to-speech
           npx cap init "My English App" "com.myapp.english" --web-dir=dist
           npx cap add android
           
