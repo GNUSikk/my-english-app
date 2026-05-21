@@ -1,0 +1,23 @@
+{
+  "name": "EduAudio Scribe - Bilingual Player",
+  "short_name": "EduAudio",
+  "description": "An educational app that translates English sentences into Russian, then plays both with a configurable pause.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

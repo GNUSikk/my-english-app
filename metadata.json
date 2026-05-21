@@ -1,0 +1,9 @@
+{
+  "name": "My English App",
+  "description": "An educational app that translates your English sentences into Russian using AI. It then plays back each English sentence, pauses for a user-defined duration, and then plays its Russian translation. You can also download the translated Russian script.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "prompt": "",
+  "majorCapabilities": []
+}
