@@ -36,9 +36,12 @@ jobs:
       - name: Sync and Build APK
         run: |
           npx cap sync
+          # Создаем скрипт-исправление для устранения дубликатов Kotlin
+          echo "allprojects { configurations.all { resolutionStrategy { force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'; force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'; force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22' } } }" > fix-duplicates.gradle
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          # Запускаем сборку с использованием этого исправления
+          ./gradlew assembleDebug -I ../fix-duplicates.gradle
           
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
