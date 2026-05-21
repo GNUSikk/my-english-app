@@ -1,4 +1,6 @@
 
+import { TextToSpeech } from '@capacitor-community/text-to-speech';
+import { Capacitor } from '@capacitor/core';
 import React, { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 import { ScriptDisplay } from './components/ScriptDisplay';
 import { AudioControls } from './components/AudioControls';
